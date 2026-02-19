@@ -1,0 +1,145 @@
+/* Why Choose Us Section */
+.why-choose {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.why-choose .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.why-content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.why-content h2::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    margin-top: 1rem;
+    border-radius: 2px;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    padding: 1rem;
+    background: #f8fafd;
+    border-radius: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.feature:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 25px -8px rgba(59,130,246,0.15);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 28px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    border-radius: 50%;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(59,130,246,0.3);
+}
+
+.feature h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 0.3rem;
+}
+
+.feature p {
+    color: #5a6e88;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.why-image {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 25px 40px -15px rgba(0,0,0,0.3);
+    height: 500px;
+}
+
+.why-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.why-image:hover img {
+    transform: scale(1.05);
+}
+
+.why-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, transparent 60%, rgba(59,130,246,0.1));
+    pointer-events: none;
+}
+
+/* Why Choose Responsive */
+@media (max-width: 900px) {
+    .why-choose .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .why-image {
+        height: 400px;
+        order: -1;
+    }
+    
+    .why-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .why-choose {
+        padding: 3rem 1.5rem;
+    }
+    
+    .feature {
+        padding: 0.8rem;
+    }
+    
+    .feature h4 {
+        font-size: 1.1rem;
+    }
+    
+    .why-image {
+        height: 300px;
+    }
+}
