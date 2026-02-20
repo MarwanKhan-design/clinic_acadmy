@@ -1,0 +1,126 @@
+/* Leadership Section Styles */
+.leadership {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f8fafd 0%, #f0f4fa 100%);
+}
+
+.leadership .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.leadership h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #5a6e88;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.leader-card {
+    background: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 15px 30px -12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.leader-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 40px -15px rgba(59,130,246,0.3);
+}
+
+.leader-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.leader-card:hover img {
+    transform: scale(1.05);
+}
+
+.leader-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin: 1.5rem 0 0.3rem;
+    padding: 0 1rem;
+}
+
+.leader-title {
+    color: #3b82f6;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.leader-bio {
+    color: #5a6e88;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    padding: 0 1.5rem 2rem;
+    margin: 0;
+}
+
+.view-all-team {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 0.9rem 2.5rem;
+    background: white;
+    color: #1e2b3a;
+    text-decoration: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    border: 2px solid #e2e8f0;
+    transition: all 0.2s;
+}
+
+.view-all-btn:hover {
+    border-color: #3b82f6;
+    background: #f8fafd;
+    transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .leadership {
+        padding: 3rem 1.5rem;
+    }
+    
+    .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .leader-card img {
+        height: 280px;
+    }
+}

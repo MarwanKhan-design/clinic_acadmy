@@ -1,0 +1,69 @@
+/* Accreditations Section Styles */
+.accreditations {
+    padding: 4rem 2rem;
+    background: white;
+    border-top: 1px solid #eef2f6;
+    border-bottom: 1px solid #eef2f6;
+}
+
+.accreditations .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.accreditations h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 2.5rem;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.award-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f8fafd;
+    border-radius: 1rem;
+    transition: transform 0.2s;
+}
+
+.award-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px -8px rgba(0,0,0,0.1);
+}
+
+.award-icon {
+    font-size: 2rem;
+}
+
+.award-item span:last-child {
+    color: #2d4055;
+    font-weight: 500;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .awards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .accreditations {
+        padding: 3rem 1.5rem;
+    }
+    
+    .awards-grid {
+        grid-template-columns: 1fr;
+    }
+}

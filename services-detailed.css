@@ -1,0 +1,133 @@
+/* Detailed Services Styles */
+.services-detailed {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f8fafd 0%, #f0f4fa 100%);
+}
+
+.services-detailed .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-detailed h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #5a6e88;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.detailed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.detailed-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 15px 30px -12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.detailed-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 40px -15px rgba(59,130,246,0.2);
+}
+
+.detailed-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.service-icon {
+    font-size: 2.5rem;
+}
+
+.detailed-header h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+}
+
+.detailed-card > p {
+    color: #5a6e88;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.service-details {
+    background: #f8fafd;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin: 1.5rem 0;
+}
+
+.service-details h4 {
+    color: #2d4055;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.service-details ul {
+    list-style: none;
+}
+
+.service-details li {
+    color: #5a6e88;
+    padding: 0.3rem 0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.service-details li::before {
+    content: "•";
+    color: #3b82f6;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.service-doctors {
+    padding-top: 1rem;
+    border-top: 1px solid #eef2f6;
+}
+
+.service-doctors span {
+    color: #6b7b8f;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .detailed-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .services-detailed {
+        padding: 3rem 1.5rem;
+    }
+    
+    .services-detailed h2 {
+        font-size: 2rem;
+    }
+    
+    .detailed-card {
+        padding: 1.5rem;
+    }
+}

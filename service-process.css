@@ -1,0 +1,145 @@
+/* Service Process Styles */
+.service-process {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.service-process .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-process h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 0.5rem;
+}
+
+.process-steps {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem 0;
+    flex-wrap: wrap;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    background: #f8fafd;
+    border-radius: 1.5rem;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 30px -10px rgba(59,130,246,0.15);
+}
+
+.step-number {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(59,130,246,0.3);
+}
+
+.step-icon {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+.step h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 0.8rem;
+}
+
+.step p {
+    color: #5a6e88;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.step-connector {
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    margin: 0 1rem;
+}
+
+.process-cta {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafd, #eef2f6);
+    border-radius: 2rem;
+}
+
+.process-cta p {
+    color: #2d4055;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.process-btn {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 18px -6px rgba(139, 92, 246, 0.4);
+}
+
+.process-btn:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px -6px rgba(59,130,246,0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .process-steps {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .step {
+        width: 100%;
+    }
+    
+    .step-connector {
+        width: 2px;
+        height: 30px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-process {
+        padding: 3rem 1.5rem;
+    }
+    
+    .service-process h2 {
+        font-size: 2rem;
+    }
+}
