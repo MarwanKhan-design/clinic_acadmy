@@ -1,0 +1,145 @@
+/* About Community Styles */
+.about-community {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #f0f7ff 0%, #e6f0fa 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-community::before {
+    content: '❤️';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    font-size: 300px;
+    opacity: 0.03;
+    transform: rotate(15deg);
+}
+
+.about-community .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.community-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.community-content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin: 1rem 0 1.5rem;
+}
+
+.community-text {
+    color: #4a5a6e;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.community-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.community-stat {
+    text-align: center;
+    padding: 1rem;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,0.05);
+}
+
+.community-stat .stat-number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.3rem;
+}
+
+.community-stat .stat-label {
+    color: #6b7b8f;
+    font-size: 0.9rem;
+}
+
+.community-programs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.program-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 30px -10px rgba(0,0,0,0.1);
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 25px 40px -15px rgba(59,130,246,0.3);
+}
+
+.program-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.program-card h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin-bottom: 0.8rem;
+}
+
+.program-card p {
+    color: #6b7b8f;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .community-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .community-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .about-community {
+        padding: 3rem 1.5rem;
+    }
+    
+    .community-content h2 {
+        font-size: 2rem;
+    }
+    
+    .community-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .community-programs {
+        grid-template-columns: 1fr;
+    }
+}

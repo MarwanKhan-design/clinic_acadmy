@@ -1,0 +1,168 @@
+/* About Facility Tour Styles */
+.about-facility-tour {
+    padding: 5rem 2rem;
+    background: white;
+}
+
+.about-facility-tour .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.facility-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+}
+
+.facility-header h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e2b3a;
+    margin: 1rem 0 0.5rem;
+}
+
+.facility-header p {
+    color: #5a6e88;
+    font-size: 1.2rem;
+}
+
+.facility-showcase {
+    margin-bottom: 3rem;
+}
+
+.facility-main-image {
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 20px 30px -10px rgba(0,0,0,0.2);
+}
+
+.facility-main-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.facility-main-image:hover img {
+    transform: scale(1.02);
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 2rem 1.5rem 1rem;
+    font-weight: 500;
+}
+
+.facility-image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.grid-item {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 150px;
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+.grid-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    color: white;
+    padding: 1rem 0.5rem 0.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.facility-features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8fafd, #f0f4fa);
+    border-radius: 2rem;
+}
+
+.feature-block {
+    text-align: center;
+}
+
+.feature-number {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.3rem;
+}
+
+.feature-block span:last-child {
+    color: #2d4055;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+@media (max-width: 900px) {
+    .facility-image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .facility-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .about-facility-tour {
+        padding: 3rem 1.5rem;
+    }
+    
+    .facility-header h2 {
+        font-size: 2rem;
+    }
+    
+    .facility-main-image img {
+        height: 250px;
+    }
+    
+    .facility-image-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-item {
+        height: 200px;
+    }
+    
+    .facility-features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
